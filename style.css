@@ -1,0 +1,104 @@
+body {
+  background: #444;
+  font-family: sans-serif;
+  color: #ccc;
+  padding: 1em;
+}
+
+#fire-grid {
+  position: relative;
+}
+
+#grid {
+  height: 750px;
+  width: 750px;
+  position: relative;
+}
+
+#grid .target {
+  width: 750px;
+  height: 750px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  transform-origin: top left;
+  transform: scale(2);
+}
+
+#burned {
+  position: relative;
+  height: 2em;
+  background: white;
+  width: 750px;
+  margin: 0 0 0.5ex 0;
+  background: rgba(90, 130, 50);
+}
+
+#burned div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 0%;
+  color: #ddd;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(160, 50, 32);
+  padding: 0.5em 0;
+  border-right: 4px solid #444;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: 1em;
+  background: #999;
+  border: 2px solid rgba(0,0,0,0.2);
+}
+
+button.selected {
+  background: #eee;
+}
+
+#tools {
+  margin-bottom: 0.3em;
+}
+
+#tools .compass {
+  margin-left: 1em;
+  font-size: 2em;
+  display: inline-block;
+  /*
+  border-radius: 2em;
+  width: 2em;
+  height: 2em;
+  background: rgba(0,0,0,0.3);
+  */
+  width: 1.75em;
+  height: 1.75em;
+  border-radius: 2em;
+  background: rgba(0,0,0,0.2);
+}
+
+#tools .compass .wind {
+  opacity: 0;
+}
+
+#tools .wind:before {
+  content: "\25b2";
+  content: "\2191";
+  content: "\1f816";
+  content: "\279C";
+  content: "\1f882";
+  content: ">";
+  font-weight: bold;
+
+}

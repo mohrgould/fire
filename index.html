@@ -1,0 +1,38 @@
+<!doctype html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fire</title>
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="tools" style="width: 750px; position: relative; height: 5em;">
+    <div style="position: absolute; left: 0; top: 0;">
+      <button class="ignite">Ignite</button>
+      <button class="firebreak">Firebreak</button>
+      <div class="compass">
+        <div class="wind"></div>
+      </div>
+    </div>
+
+
+    <div  style="position: absolute; right: 0; top: 0;">
+      <span id="fps" style="color: #000; font-weight: bold; margin-right: 1em;">
+        <span class="model"></span>
+        +
+        <span class="view"></span>
+      </span>
+      <button id="reset-button">Reset</button>
+    </div>
+  </div>
+  <div id="burned">
+    <div></div>
+  </div>
+  <div id="grid">
+  </div>
+  
+  <script src="main.js" type="module"></script>
+</body>
